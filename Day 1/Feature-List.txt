@@ -1,0 +1,9 @@
+Recursive Calculator
+
+Addition
+Subtraction
+Multiplication
+Division (Maybe?)
+Operator replacement
+
+All implemented as recursive functions
