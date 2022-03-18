@@ -1,0 +1,5 @@
+Sanitized Script Interpreter
+
+Command whitelist mode
+Command blacklist mode
+Read code from file
