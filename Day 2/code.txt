@@ -1,0 +1,4 @@
+print("yeet")
+exec('print("yeet")')
+exec('print("yeet")')
+print("yeet")
