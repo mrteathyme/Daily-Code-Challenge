@@ -1,3 +1,4 @@
+#print(exec("quit()"))
 print("yeet")
 exec('print("yeet")')
 exec('print("yeet")')

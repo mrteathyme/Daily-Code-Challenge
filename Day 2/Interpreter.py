@@ -24,13 +24,14 @@ def sanitize(input, listInput: list = [], mode: int = 0):
             x = input
             for i in matchTerm:
                 print(i)
+                x = re.sub(r'[.*]\('+i+r'\)', r'', x)
                 x = re.sub(r''+i, r'', x)
-            print(f'whiteList={listInput}')
+            #print(f'whiteList={listInput}')
             return x
         elif mode == 2:
             for i in listInput:
                 constructedString =re.sub(r''+i+'\(.*\)', r'', input)
-            print(f'blackList={listInput}')
+            #print(f'blackList={listInput}')
             return constructedString
     return input
 
@@ -45,10 +46,10 @@ for i in x:
         z.append(i)
 
 
-print(x)
-print(y)
+#print(x)
+#print(y)
 
-exec(sanitize(read('code.txt'), ["print", "exec"], 1))
+exec(sanitize(read('code.txt'), ["print"], 1))
 exec(sanitize(read('code.txt'), ["eval","exec"], 2))
 
 
