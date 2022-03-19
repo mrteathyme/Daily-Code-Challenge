@@ -1,0 +1,3 @@
+Read twitch chat
+Implement without using twitch libraries
+Implement as class that can connect to specific chat per instance
